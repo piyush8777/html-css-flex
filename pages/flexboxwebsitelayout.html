@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Flexbox Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+        }
+
+        .outer-col-1 {
+            background: #3fb0ac;
+            font-size: 30px;
+            flex: 1;
+        }
+
+        .outer-col-2 {
+            display: flex;
+            flex-direction: column;
+            flex: 6;
+        }
+
+        .inner-row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .inner-col {
+            flex: 5;
+        }
+
+        article {
+            background-color: #efc9af;
+            padding: 10px;
+            margin: 10px;
+            font-size: 15px;
+        }
+
+        aside {
+            background: #3fb0ac;
+            font-size: 30px;
+            flex: 1;
+        }
+
+        header,
+        footer {
+            background: #0b90a1;
+            color: #e9e8d7;
+            font-weight: bold;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        header,
+        footer,
+        article,
+        nav,
+        aside {
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="outer-col-1">Nav</nav>
+    <div class="outer-col-2">
+        <header>Header</header>
+        <div class="inner-row">
+            <div class="inner-col">
+                <article>
+                    <h2>First article</h2>
+                    <p>Sunset is the time of day when our sky meets the outer space solar winds. There are blue, pink,and
+                        purple swirls, spinning and twisting, like clouds of balloons caught in a whirlwind. The sun
+                        moves slowly to hide behind the line of horizon, while the moon races to take its place in prominence
+                        atop the night sky. People slow to a crawl, entranced, fully forgetting the deeds that must still be
+                        done. There is a coolness, a calmness, when the sun does set.</p>
+                </article>
+                <article>
+                    <h2>Second article</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, quisquam qui quasi nisi quis quidem praesentium, delectus magni, placeat similique quae. Nostrum, autem aperiam dicta doloribus quia laudantium amet quaerat delectus Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Laboriosam commodi ea nisi harum eaque facere nihil reprehenderit numquam hic ipsa!  </p>
+                </article>
+                <article>
+                    <h2>Third article</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi adipisci a totam molestias vel quod doloribus provident quia non natus suscipit magnam error tempore harum perspiciatis nihil, sint velit voluptas temporibus excepturi! Aspernatur ratione praesentium rerum similique, accusantium quos omnis pariatur laborum porro quo suscipit incidunt officiis, recusandae, sunt at?Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt optio ullam amet consectetur praesentium mollitia aliquid, doloribus odio dolor saepe accusantium repellat. Distinctio error libero nobis aliquid fuga suscipit veniam eius quisquam porro blanditiis delectus minima eligendi illo reiciendis in saepe rerum excepturi quia, animi quaerat necessitatibus labore officia amet iste. Quia obcaecati consectetur esse, illo animi neque molestiae blanditiis?
+                    </p>
+                </article>
+                <footer>Footer</footer>
+            </div>
+            <aside>Aside</aside>
+        </div>
+    </div>
+</body>
+
+</html>
